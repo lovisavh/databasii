@@ -1,0 +1,6 @@
+Sida, User action, Inputtyp, Logic
+1. Ge studentid, (sträng), lägg i databasen till en student som läser en kurs
+1. Välj kurs, (från dropdown/radio buttons), hämta vilka recitations + grupper som finns för kursen som studenten läser
+2. Välj recitation, (dropdown/radio buttons),	hämta vilka uppgifter som finns att göra för den recitation
+2. Välj grupp, (dropdown/radio buttons)
+3. Submit gjorda uppgifter, (y/n rutor) 
