@@ -16,6 +16,14 @@
 			Thank you <?php echo $_SESSION['teacherid']?>
 	</div>
 
+	<div class='form'>
+		<form action="script.php" method="post">
+			<div class="submit2">
+				<input type="submit" name="home2" value="End session">
+			</div>
+		</form>
+	</div>
+
 </body>
 
 </html>

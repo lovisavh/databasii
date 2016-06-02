@@ -23,8 +23,10 @@
 	$studentid = $_SESSION['studentid'];
 	$courseid = $_SESSION['courseid'];
 	$recitationid = $_SESSION['recitationid'];
-	$problemid = $_SESSION['pId'];
+	//$problemid = $_SESSION['pId'];
 
+	// räknar antalet lösta superproblem där studenten är jag och recitation är den jag har valt
+	// så många poäng som studenten kommer att få
 	$query = "SELECT COUNT(problem) as solved FROM (
 				SELECT problem, subcount FROM ( 
 					SELECT  recitationrecord.pId as problem, 
@@ -39,11 +41,17 @@
 	$row = mysqli_fetch_assoc(mysqli_query($conn, $query));
 	$_SESSION['countsolved'] = $row['solved'];
 
-	echo "User " . $studentid . " has solved (" . $_SESSION['countsolved'] . ") problems for recitaton " . $recitationid . "!";
+	echo "User " . $studentid . " has solved (" . $_SESSION['countsolved'] . ") problems for recitaton " . $recitationid . "! Do you want to confirm?";
 
-	//session_unset();
-	//session_destroy();
 	?>
+
+	<div class='form'>
+		<form action="script.php" method="post">
+			<div class="submit">
+				<input type="submit" name="home" value="Confirm">
+			</div>
+		</form>
+	</div>
 
 </body>
 

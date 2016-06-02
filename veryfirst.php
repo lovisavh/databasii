@@ -1,10 +1,3 @@
-<!--
-This page handles the following steps:
-
-User action			Inputtyp								Business logic
-1. Ge studentid		(sträng)								type id, kolla om finns i databas, annars inte registrerad
-2. Välj kurs		(från dropdown/radio buttons)			Get vilka recitations + grupper som finns
- -->
 <?php
 session_start();
 
@@ -26,6 +19,7 @@ if (!$conn) {
 <head>
 	<title>Recitation submission</title>
 	<link id="pagestyle" rel="stylesheet" type="text/css" href="lab.css">
+	<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress !important;}</style><a href="http://www.cursors-4u.com/cursor/2011/02/06/harry-potter-magical-wand.html" target="_blank" title="Harry Potter Magical Wand"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Harry Potter Magical Wand" style="position:absolute; top: 0px; right: 0px;" /></a>
 	<script>
 		function swapStyleSheet(sheet){
 		document.getElementById('pagestyle').setAttribute('href', sheet);
@@ -41,9 +35,10 @@ if (!$conn) {
 
 <div class="form">
 	<form action="script.php" method="post">
+
 		<div class="submit">
-			<input name="teacher" type="submit" value="I am a teacher →">
-			<input name="student" type="submit" value="I am a student →">
+			<input name="teacher" type="submit" value="I am a teacher">
+			<input name="student" type="submit" value="I am a student">
 		</div>
 	</form>
 </div>

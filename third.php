@@ -1,9 +1,4 @@
-<!--
-This page handles the following steps:
 
-User action							Inputtyp								Business logic
-5. Submit gjorda uppgifter 			(rutor)									Post?
- -->
  <?php
  	session_start();
  	$conn = mysqli_connect("localhost", "root", "", "db");
@@ -50,7 +45,7 @@ User action							Inputtyp								Business logic
 	</div>
 
 	<div class="submit">
-		<input type="submit" name="submit3">
+		<input type="submit" name="submit3" value="Next">
 	</div>
 	</form>
 </div>

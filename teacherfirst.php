@@ -1,10 +1,4 @@
-<!--
-This page handles the following steps:
 
-User action			Inputtyp								Business logic
-1. Ge studentid		(sträng)								type id, kolla om finns i databas, annars inte registrerad
-2. Välj kurs		(från dropdown/radio buttons)			Get vilka recitations + grupper som finns
- -->
 <?php
 session_start();
 

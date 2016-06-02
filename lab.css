@@ -52,5 +52,5 @@ input[type=submit] {
 }
 
 input[type=checkbox] {
-	cursor: pointer;
+	cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), progress !important;
 }

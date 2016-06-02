@@ -1,10 +1,4 @@
-<!--
-This page handles the following steps:
 
-User action							Inputtyp								Business logic
-3. Välj recitation 					(dropdown/radio buttons)				Get vilka uppgifter som finns att göra
-4. Välj grupp 						(dropdown/radio buttons)
--->
 <?php
 session_start();
 ?>
